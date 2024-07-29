@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+
+<!-- /flavours.html-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <title>Maruti Munchies</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link href="inc/owl-carosuel/owl.carousel.css" type="text/css" rel="stylesheet" />
+    <link href="inc/owl-carosuel/owl.transitions.css" type="text/css" rel="stylesheet" />
+    <link href="inc/owl-carosuel/owl-animate.css" type="text/css" rel="stylesheet" />
+
+    <link href="inc/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" />
+
+    <link href="inc/aos/aos.css" type="text/css" rel="stylesheet" />
+
+    <link href="font/font.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/media-query.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body data-anm=".anm">
+
+    <div class="wrapper">
+        
+        <%- include('layout/header') %>
+
+        <div id="main-content">
+
+            <div class="inner-header flavour-inner-header">
+                <div class="container">
+                    <h1>Flavours</h1>
+                    <div class="breadcrums">
+                        <a href="/">Home</a>
+                        <a href="javascript:void(0);">Flavours</a>
+                    </div>
+                </div>
+                <div class="curv-svg">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 1439 39.7" style="enable-background:new 0 0 1439 39.7;"
+                        xml:space="preserve">
+                        <path
+                            d="M749.5,39.7c-12,0-24,0-36,0c-1.5-0.2-2.9-0.4-4.4-0.5c-43.6-1.7-85.9-7.6-127.2-16.6c-18-3.9-36.3-7-55.3-7.9
+                        c-36.2-1.8-71.7,1.4-107.2,5.5c-22.7,2.6-45.3,6-68.2,7.9c-28.4,2.3-57,3.5-85.5,4.8c-42.2,1.8-84.2,0.4-125.7-5.1
+                        c-41.6-5.5-83.5-8.3-126-6.6C9.5,21.4,4.9,21.6,0,21.8C0,14.3,0,7.1,0,0c479.7,0,959.3,0,1439,0c0,6.8,0,13.7,0,20.5
+                        c-20.1,2.9-40.1,6-60.3,8.7c-36.2,4.7-72.5,5.4-109.2,1.8c-35.1-3.4-69.6-8.4-103.8-14.1c-32.9-5.5-66-10.1-99.9-11.7
+                        c-38.9-1.9-77.8-2.2-116.6,0.6c-35.9,2.6-70.7,7.6-103.2,18.3c-22.5,7.4-46.7,11.6-71.8,13.8C765.9,38.5,757.7,39.1,749.5,39.7z" />
+                    </svg>
+
+                </div>
+            </div>
+
+            <div class="inner-flavours-section">
+                
+                <% 
+                pro.forEach((row, index) => { %>
+                    <div class='single-flavour-row <%= row.class %>'>
+                        <div class="container">
+                            <div class="flavour-inner-row">
+                                <div class="khakhra-img">
+                                    <div class="khakhra-inr-img" data-aos="fade-right">
+                                        <img src="images/khakhra-flavour/magic-masala-bg.png" class="flavour-circle-img"
+                                            alt="" />
+                                        <div class="khakhra-packets">
+                                            <div class="khakhra-pos-abs inr-regular-khakhra"><img
+                                                    src="<%= row.images[0] %>" alt="" /></div>
+                                            <div class="khakhra-pos-abs inr-mobile-khakhra"><img
+                                                    src="<%= row.images[1] %>" alt="" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="khakhra-dtl" data-aos="fade-left">
+                                    <div class="khakhra-flavour-name">
+                                        <h3><%= row.name %>
+                                            <span>Khakhra</span>
+                                        </h3>
+                                    </div>
+                                    <div class="khakhra-package-dtl">
+                                        <div class="pckg-dtl">
+                                            <h3>Regular Packet</h3>
+                                            <h2>190 gms</h2>
+                                        </div>
+    
+                                        <div class="pckg-dtl">
+                                            <h3>Mobile Packet</h3>
+                                            <h2>30 gms</h2>
+                                        </div>
+                                    </div>
+    
+                                    <p>
+                                        <%= row.description %>
+                                    </p>
+                                    <a href="javascript:void(0)" class="add_cart btn btn-primary mt-3" data-speed-x="2"
+                                        data-speed-y="-2" data-speed-scale="2" pro_id="<%=row._id%>">Add To Cart</a>
+                                    <a href="javascript:void(0)" class="add_wishlist btn btn-primary mt-3" data-speed-x="2"
+                                        data-speed-y="-2" data-speed-scale="2" pro_id="<%=row._id%>">Add To Wishlist</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="curv-svg">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px" y="0px" viewBox="0 0 1439 39.7" style="enable-background:new 0 0 1439 39.7;"
+                                xml:space="preserve">
+                                <path
+                                    d="M749.5,39.7c-12,0-24,0-36,0c-1.5-0.2-2.9-0.4-4.4-0.5c-43.6-1.7-85.9-7.6-127.2-16.6c-18-3.9-36.3-7-55.3-7.9
+                                c-36.2-1.8-71.7,1.4-107.2,5.5c-22.7,2.6-45.3,6-68.2,7.9c-28.4,2.3-57,3.5-85.5,4.8c-42.2,1.8-84.2,0.4-125.7-5.1
+                                c-41.6-5.5-83.5-8.3-126-6.6C9.5,21.4,4.9,21.6,0,21.8C0,14.3,0,7.1,0,0c479.7,0,959.3,0,1439,0c0,6.8,0,13.7,0,20.5
+                                c-20.1,2.9-40.1,6-60.3,8.7c-36.2,4.7-72.5,5.4-109.2,1.8c-35.1-3.4-69.6-8.4-103.8-14.1c-32.9-5.5-66-10.1-99.9-11.7
+                                c-38.9-1.9-77.8-2.2-116.6,0.6c-35.9,2.6-70.7,7.6-103.2,18.3c-22.5,7.4-46.7,11.6-71.8,13.8C765.9,38.5,757.7,39.1,749.5,39.7z" />
+                            </svg>
+                        </div>
+                    </div>
+             <%   })
+            %>
+                    
+            
+                
+                
+                
+
+                
+
+
+
+                <div class="clearfix"></div>
+            </div>
+
+            <%- include('layout/brochure_section') %>
+            <div class="clearfix"></div>
+        </div>
+        <%- include('layout/footer') %>
+
+        <div class="go-top-area">
+            <div class="go-top-wrap">
+                <div class="go-top-btn-wrap">
+                    <div class="go-top go-top-btn">
+                        <i class="fa fa-angle-double-up"></i>
+                        <i class="fa fa-angle-double-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3-6-0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="inc/owl-carosuel/owl.carousel.js"></script>
+    <script type="text/javascript" src="inc/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="inc/anm/anm.js"></script>
+    <script type="text/javascript" src="inc/aos/aos.js"></script>
+    <script type="text/javascript" src="js/design-common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+<!-- /flavours.html  11:20:42 GMT -->
+
+</html>
+
+<script>
+    $('.add_cart').click(function(e){
+        var id = $(this).attr('pro_id');
+        var arr = {id:id};
+        $.ajax({
+            url: "/add_cart",
+            method: "post",
+            data: {'id' : id},
+            success: function(msg) {
+                // alert(msg.row)
+                $('#total_item_cart').text(msg.total_items)
+                $('#row').html(msg.row)
+                $('#total_amount').text("₹ "+msg.total)
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Product Added to cart!",
+                    icon: "success",
+                    confirmButtonColor: "#500800",
+                });
+               
+            }
+        });
+        
+    })
+
+    $('.add_wishlist').click(function(e){
+        var id = $(this).attr('pro_id');
+        var arr = {id:id};
+        $.ajax({
+            url: "/add_wishlist",
+            method: "post",
+            data: {'id' : id},
+            success: function(msg) {
+                // alert(msg)
+                $('.wishlist_count').text(msg.total_items)
+                
+                
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Product Added to Wishlist!",
+                    icon: "success",
+                    confirmButtonColor: "#500800",
+                });
+                
+            }
+        });
+        
+    })
+    
+</script>

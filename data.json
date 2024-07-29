@@ -1,0 +1,201 @@
+[
+    {
+        "name" : " Methi Khakhra",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/methi-r.png",
+            "images/khakhra-flavour/methi-m.png"
+        ],
+        "class" : "methi-flavour"
+    },
+    {
+        "name" : " Magic Masala",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/magic-masala-r.png",
+            "images/khakhra-flavour/magic-masala-m.png"
+        ],
+        "class" : "magic-masala-flavour"
+    },
+    {
+        "name" : " Piri Piri",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/piri-piri-r.png",
+            "images/khakhra-flavour/piri-piri-m.png"
+        ],
+        "class" : "piri-piri-flavour"
+    },
+    {
+        "name" : " Jeera",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/jeera-r.png",
+            "images/khakhra-flavour/jeera-m.png"
+        ],
+        "class" : "jeera-flavour"
+    },
+    {
+        "name" : " Tomato Masti",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/tomato-masti-r.png",
+            "images/khakhra-flavour/tomato-masti-m.png"
+        ],
+        "class" : "tt-flavour"
+    },
+    {
+        "name" : " Plain",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/plain-r.png",
+            "images/khakhra-flavour/plain-m.png"
+        ],
+        "class" : "plain-flavour"
+    },
+    {
+        "name" : " Coriander Chilli",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/cc-r.png",
+            "images/khakhra-flavour/cc-m.png"
+        ],
+        "class" : "cc-flavour"
+    },
+    {
+        "name" : " Jaljeera",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/jaljeera-r.png",
+            "images/khakhra-flavour/jaljeera-m.png"
+        ],
+        "class" : "jj-flavour"
+    },
+    {
+        "name" : " Cheese",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/cheese-r.png",
+            "images/khakhra-flavour/cheese-m.png"
+        ],
+        "class" : "cheese-flavour"
+    },
+    {
+        "name" : " Pizza",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/pizza-r.png",
+            "images/khakhra-flavour/pizza-m.png"
+        ],
+        "class" : "pz-flavour"
+    },
+    {
+        "name" : " Ginger Chilli",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/gc-r.png",
+            "images/khakhra-flavour/gc-m.png"
+        ],
+        "class" : "gc-flavour"
+    },
+    {
+        "name" : " Pav Bhaji",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/pb-r.png",
+            "images/khakhra-flavour/pb-m.png"
+        ],
+        "class" : "pb-flavour"
+    },
+    {
+        "name" : " Pani Puri",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/pp-r.png",
+            "images/khakhra-flavour/pp-m.png"
+        ],
+        "class" : "pp-flavour"
+    },
+    {
+        "name" : " Achar",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/achar-r.png",
+            "images/khakhra-flavour/achar-m.png"
+        ],
+        "class" : "achar-flavour"
+    },
+    {
+        "name" : " Chat Masala",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/cm-r.png",
+            "images/khakhra-flavour/cm-m.png"
+        ],
+        "class" : "cm-flavour"
+    },
+    {
+        "name" : " Soya Masala",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/soya-r.png",
+            "images/khakhra-flavour/soya-m.png"
+        ],
+        "class" : "soya-flavour"
+    },
+    {
+        "name" : " Ajma Masala",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/ajma-r.png",
+            "images/khakhra-flavour/ajma-m.png"
+        ],
+        "class" : "ajma-flavour"
+    },
+    {
+        "name" : " Mari Masala",
+        "price" : "250",
+        "description" : "Maboriosam in a tonto nesciung eget distingy magndapibus." ,
+        "stock" : "10",
+        "images" : [
+            "images/khakhra-flavour/mari-r.png",
+            "images/khakhra-flavour/mari-m.png"
+        ],
+        "class" : "mari-flavour"
+    }
+    
+]

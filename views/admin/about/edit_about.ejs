@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Edit About Us | Maruti Munchies</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="/../admin/assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/../admin/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/../admin/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/../admin/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="/../admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="/../admin/assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="/../admin/assets/js/config.js"></script>
+    <link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
+    <script type="text/javascript" src="/richtexteditor/rte.js"></script>
+    <script type="text/javascript" src='/richtexteditor/plugins/all_plugins.js'></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <%- include('../layout/sidebar') %>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <%- include('../layout/navbar') %>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="py-3 mb-4"><span class="text-muted fw-light">About Us/</span> Edit About Us</h4>
+
+              <!-- Basic Layout -->
+              <div class="row">
+                <div class="col-xl">
+                  <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                      <h5 class="mb-0">About Us</h5>
+                      <small class="text-muted float-end">About Us</small>
+                    </div>
+                    <div class="card-body">
+                      <form method="post" action="/backoffice/update_about/<%=about._id%>" enctype="multipart/form-data">
+                        <img src="../../<%=about.left_image%>" alt="" width="75" height="75">
+                        <div class="mb-3">
+                            <label class="form-label">left_image</label>
+                            <input type="file" name="left_image" id="" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Right image</label>
+                          <input type="file" name="right_image" id="" class="form-control" required>
+                      </div>
+                        <div class="mb-3">
+                            <label class="form-label">About Us</label>
+                            <textarea name="about_us" id="about" class="form-control" required><%-about.about%></textarea>
+                        </div>
+                        
+                        
+
+                        
+                        
+                        
+                       
+                        
+                        <button type="submit" class="btn btn-primary">Edit About Us</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <%- include('../layout/footer') %>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="/../admin/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="/../admin/assets/vendor/libs/popper/popper.js"></script>
+    <script src="/../admin/assets/vendor/js/bootstrap.js"></script>
+    <script src="/../admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="/../admin/assets/vendor/js/menu.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="/../admin/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#about' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>

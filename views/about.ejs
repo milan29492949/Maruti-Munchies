@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+
+<!-- /about.html -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="-1" />
+	<title>Maruti Munchies</title>
+
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+	<link href="inc/owl-carosuel/owl.carousel.css" type="text/css" rel="stylesheet" />
+	<link href="inc/owl-carosuel/owl.transitions.css" type="text/css" rel="stylesheet" />
+	<link href="inc/owl-carosuel/owl-animate.css" type="text/css" rel="stylesheet" />
+
+	<link href="inc/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" />
+
+	<link href="inc/aos/aos.css" type="text/css" rel="stylesheet" />
+
+	<link href="font/font.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css?" type="text/css" rel="stylesheet" />
+	<link href="css/media-query.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body data-anm=".anm">
+
+	<div class="wrapper">
+		<%- include('layout/header') %>
+
+		<div id="main-content">
+
+			<div class="inner-header">
+				<div class="container">
+					<h1>About Us</h1>
+					<div class="breadcrums">
+						<a href="/">Home</a>
+						<a href="javascript:void(0);">About Us</a>
+					</div>
+				</div>
+				<div class="curv-svg">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+						y="0px" viewBox="0 0 1439 39.7" style="enable-background:new 0 0 1439 39.7;" xml:space="preserve">
+						<path
+							d="M749.5,39.7c-12,0-24,0-36,0c-1.5-0.2-2.9-0.4-4.4-0.5c-43.6-1.7-85.9-7.6-127.2-16.6c-18-3.9-36.3-7-55.3-7.9
+                        c-36.2-1.8-71.7,1.4-107.2,5.5c-22.7,2.6-45.3,6-68.2,7.9c-28.4,2.3-57,3.5-85.5,4.8c-42.2,1.8-84.2,0.4-125.7-5.1
+                        c-41.6-5.5-83.5-8.3-126-6.6C9.5,21.4,4.9,21.6,0,21.8C0,14.3,0,7.1,0,0c479.7,0,959.3,0,1439,0c0,6.8,0,13.7,0,20.5
+                        c-20.1,2.9-40.1,6-60.3,8.7c-36.2,4.7-72.5,5.4-109.2,1.8c-35.1-3.4-69.6-8.4-103.8-14.1c-32.9-5.5-66-10.1-99.9-11.7
+                        c-38.9-1.9-77.8-2.2-116.6,0.6c-35.9,2.6-70.7,7.6-103.2,18.3c-22.5,7.4-46.7,11.6-71.8,13.8C765.9,38.5,757.7,39.1,749.5,39.7z" />
+					</svg>
+
+				</div>
+			</div>
+
+			<section class="about-section inner-about-section">
+				<div class="pos-abs khakhra-wheat-abs" data-aos="fade-right"><img src="<%=about.left_image%>"
+						alt="Maruti Munchise" /></div>
+				<div class="pos-abs abt-wheat-abs" data-aos="fade-left"><img src="<%=about.right_image%>"
+						alt="Maruti Munchise" /></div>
+				<div class="container">
+					<div class="title text-center" data-aos="fade-up">
+						<h4 class="sub-title">know</h4>
+						<h2 class="main-title">About Us</h2>
+					</div>
+
+					<div class="about-data">
+						<p data-aos="fade-up"><%-about.about%></p>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="facts-section inner-facts-section">
+				<div class="pos-abs red-green-chilli" data-aos="fade-right">
+					<img src="<%=fact.left_image%>" alt="Maruti Munchies" />
+				</div>
+				<div class="container">
+
+					<div class="round-top-khakhra" data-aos="zoom-in">
+						<img src="<%=fact.main_image%>" alt="Maruti Munchies" />
+					</div>
+
+					<div class="row facts-row">
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2 fact-col fact-col-left">
+							<div class="row">
+								<div class="col-12">
+									<div class="fact-icon" data-aos="fade-left">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+											xml:space="preserve">
+											<path d="<%=fact.left_top_svg%>" />
+											
+										</svg>
+									</div>
+									<h2 data-aos="fade-left"><%=fact.left_top_heading%> <span><%=fact.left_top_sub_heading%></span></h2>
+								</div>
+								<div class="col-12">
+									<div class="fact-icon" data-aos="fade-left">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+											xml:space="preserve">
+											<g>
+												<path d="<%=fact.left_bottom_svg%>" />
+												
+											</g>
+										</svg>
+									</div>
+									<h2 data-aos="fade-left"><%=fact.left_bottom_heading%> <span><%=fact.left_bottom_sub_heading%></span></h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 col-sm-12  col-12 mb-2 fact-col fact-col-right">
+							<div class="row">
+								<div class="col-12">
+									<div class="fact-icon" data-aos="fade-right">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+											xml:space="preserve">
+											<g>
+												<path d="<%=fact.right_top_svg%>" />
+												
+											</g>
+										</svg>
+									</div>
+									<h2 data-aos="fade-right"><%=fact.right_top_heading%> <span><%=fact.right_top_sub_heading%></span></h2>
+								</div>
+								<div class="col-12">
+									<div class="fact-icon" data-aos="fade-right">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+											x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+											xml:space="preserve">
+											<g>
+												<path
+													d="<%=fact.right_bottom_svg%>" />
+												
+											</g>
+										</svg>
+									</div>
+									<h2 data-aos="fade-right"><%=fact.right_bottom_heading%> <span><%=fact.right_bottom_sub_heading%></span></h2>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 mb-2 d-flex justify-content-center">
+							<h2 class="text-center flavours-text" data-aos="fade-down">
+								<span>availalbe in</span>
+								15 Flavours
+							</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="why-choose-us">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-2 choose-text">
+							<div class="title" data-aos="fade-up">
+								<h4 class="sub-title">Why</h4>
+								<h2 class="main-title">Choose Us ?</h2>
+							</div>
+							<p data-aos="fade-up">
+								<%-why_choose.description_data%>
+							</p>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-2">
+							<img src="<%=why_choose.right_image%>" alt="Maruti Munchies" />
+						</div>
+					</div>
+				</div>
+				<div class="curv-svg">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+						y="0px" viewBox="0 0 1439 39.7" style="enable-background:new 0 0 1439 39.7;" xml:space="preserve">
+						<path
+							d="M749.5,39.7c-12,0-24,0-36,0c-1.5-0.2-2.9-0.4-4.4-0.5c-43.6-1.7-85.9-7.6-127.2-16.6c-18-3.9-36.3-7-55.3-7.9
+                        c-36.2-1.8-71.7,1.4-107.2,5.5c-22.7,2.6-45.3,6-68.2,7.9c-28.4,2.3-57,3.5-85.5,4.8c-42.2,1.8-84.2,0.4-125.7-5.1
+                        c-41.6-5.5-83.5-8.3-126-6.6C9.5,21.4,4.9,21.6,0,21.8C0,14.3,0,7.1,0,0c479.7,0,959.3,0,1439,0c0,6.8,0,13.7,0,20.5
+                        c-20.1,2.9-40.1,6-60.3,8.7c-36.2,4.7-72.5,5.4-109.2,1.8c-35.1-3.4-69.6-8.4-103.8-14.1c-32.9-5.5-66-10.1-99.9-11.7
+                        c-38.9-1.9-77.8-2.2-116.6,0.6c-35.9,2.6-70.7,7.6-103.2,18.3c-22.5,7.4-46.7,11.6-71.8,13.8C765.9,38.5,757.7,39.1,749.5,39.7z" />
+					</svg>
+				</div>
+			</section>
+
+			<%- include('layout/brochure_section') %>
+
+
+			<div class="clearfix"></div>
+		</div>
+		<%- include('layout/footer') %>
+		
+
+		<div class="go-top-area">
+			<div class="go-top-wrap">
+				<div class="go-top-btn-wrap">
+					<div class="go-top go-top-btn">
+						<i class="fa fa-angle-double-up"></i>
+						<i class="fa fa-angle-double-up"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3-6-0.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="inc/owl-carosuel/owl.carousel.js"></script>
+	<script type="text/javascript" src="inc/fancybox/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="inc/anm/anm.js"></script>
+	<script type="text/javascript" src="inc/aos/aos.js"></script>
+	<script type="text/javascript" src="js/design-common.js"></script>
+</body>
+
+<!-- /about.html  11:20:42 GMT -->
+
+</html>
