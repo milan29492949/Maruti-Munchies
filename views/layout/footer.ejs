@@ -3,7 +3,7 @@
     <div class="footer-wrapper">
         <div class="container">
             <div class="ftr-logo d-flex justify-content-center">
-                <a href="index.html"><img src="<%=logo.image%>" alt="Maruti munchies" /></a>
+                <a href="/"><img src="/<%=logo !== null ? logo.image : 'images/assets/wheat-7.png'%>" alt="Maruti munchies" /></a>
             </div>
             <div class="row">
                 <div class="col-lg-10 col-md-10 col-sm-12 col-12 ftr-center-col">
@@ -15,7 +15,7 @@
                             </div>
                             <div class="ftr-data">
                                 <p>
-                                    <%-contact.address%>
+                                    <%-contact ? contact.address : ''%>
                                 </p>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                             </div>
                             <div class="ftr-data">
                                 <p>
-                                    <%=contact.mobile%>
+                                    <%=contact? contact.mobile : ''%>
                                 </p>
                             </div>
                         </div>
@@ -38,8 +38,8 @@
                                 <h4>Email</h4>
                             </div>
                             <div class="ftr-data">
-                                <a href="mailto:<%=contact.email%>">
-                                    <%=contact.email%>
+                                <a href="mailto:<%=contact ? contact.email : ''%>">
+                                    <%=contact ? contact.email : ''%>
                                 </a>
                             </div>
                         </div>
@@ -48,11 +48,11 @@
                 </div>
                 <div class="col-12">
                     <ul class="ftr-navigation">
-                        <li><a class="" href="index.html">Home</a></li>
-                        <li><a class="" href="about.html">About</a></li>
-                        <li><a class="" href="flavours.html">Flavours</a></li>
-                        <li><a class="" href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a class="" href="contact.html">Contact</a></li>
+                        <li><a class="" href="/">Home</a></li>
+                        <li><a class="" href="/about">About</a></li>
+                        <li><a class="" href="/products/all">Products</a></li>
+                        <li><a class="" href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a class="" href="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

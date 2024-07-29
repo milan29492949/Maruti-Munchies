@@ -87,12 +87,24 @@
                             <p class="text-danger"><%= errors.name.msg %></p>
                            <% } %>
                         </div>
+                        
                         <div class="mb-3">
                           <label class="form-label">Price</label>
                           <input type="text" class="form-control" name="price"placeholder="Enter Product Price" />
                           <% if(errors !== null && errors.price){ %>
                             <p class="text-danger"><%= errors.price.msg %></p>
                            <% } %>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                          <label for="">Category</label>
+                          <select name="category" id="" class="form-control">
+                            <option value="">Select Category</option>
+                            <option value="BOPP Bags">BOPP Bags</option>
+                            <option value="Insecticides Bags">Insecticides Bags</option>
+                            <option value="PP Laminated Bags">PP Laminated Bags</option>
+                            <option value="PP Wowen Fabric Roll">PP Wowen Fabric Roll</option>
+                          </select>
                         </div>
                         
                         

@@ -4,32 +4,7 @@
 <!-- /flavours.html-->
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="-1" />
-    <title>Maruti Munchies</title>
-
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-    <link href="inc/owl-carosuel/owl.carousel.css" type="text/css" rel="stylesheet" />
-    <link href="inc/owl-carosuel/owl.transitions.css" type="text/css" rel="stylesheet" />
-    <link href="inc/owl-carosuel/owl-animate.css" type="text/css" rel="stylesheet" />
-
-    <link href="inc/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" />
-
-    <link href="inc/aos/aos.css" type="text/css" rel="stylesheet" />
-
-    <link href="font/font.css" type="text/css" rel="stylesheet" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <link href="css/media-query.css" type="text/css" rel="stylesheet" />
+    <%- include('layout/meta') -%>
 
 </head>
 
@@ -73,32 +48,29 @@
                             <div class="flavour-inner-row">
                                 <div class="khakhra-img">
                                     <div class="khakhra-inr-img" data-aos="fade-right">
-                                        <img src="images/khakhra-flavour/magic-masala-bg.png" class="flavour-circle-img"
+                                        <img src="/images/khakhra-flavour/magic-masala-bg.png" class="flavour-circle-img"
                                             alt="" />
                                         <div class="khakhra-packets">
                                             <div class="khakhra-pos-abs inr-regular-khakhra"><img
-                                                    src="<%= row.images[0] %>" alt="" /></div>
+                                                    src="/<%= row.images[0] %>" alt="" /></div>
                                             <div class="khakhra-pos-abs inr-mobile-khakhra"><img
-                                                    src="<%= row.images[1] %>" alt="" /></div>
+                                                    src="/<%= row.images[1] %>" alt="" /></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="khakhra-dtl" data-aos="fade-left">
                                     <div class="khakhra-flavour-name">
                                         <h3><%= row.name %>
-                                            <span>Khakhra</span>
+                                            
                                         </h3>
                                     </div>
                                     <div class="khakhra-package-dtl">
                                         <div class="pckg-dtl">
                                             <h3>Regular Packet</h3>
-                                            <h2>190 gms</h2>
+                                            <h2><%= row.price %></h2>
                                         </div>
     
-                                        <div class="pckg-dtl">
-                                            <h3>Mobile Packet</h3>
-                                            <h2>30 gms</h2>
-                                        </div>
+                                        
                                     </div>
     
                                     <p>
@@ -157,14 +129,7 @@
 
     </div>
 
-    <script type="text/javascript" src="js/jquery-3-6-0.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="inc/owl-carosuel/owl.carousel.js"></script>
-    <script type="text/javascript" src="inc/fancybox/jquery.fancybox.js"></script>
-    <script type="text/javascript" src="inc/anm/anm.js"></script>
-    <script type="text/javascript" src="inc/aos/aos.js"></script>
-    <script type="text/javascript" src="js/design-common.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <%- include('layout/scripts') -%>
 </body>
 
 <!-- /flavours.html  11:20:42 GMT -->

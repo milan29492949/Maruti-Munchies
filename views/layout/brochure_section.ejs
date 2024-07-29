@@ -2,26 +2,26 @@
     <div class="pos-abs customer-leave" data-aos="fade-right"><img src="images/assets/leave-1.png"
             alt="Maruti Munchies" /></div>
     <div class="container">
-        <div class="brchr-customer-row">
+        <div class="brchr-customer-row" style="display: blog; text-align: justify;">
             <div class="ftr-up-col download-brochure" data-aos="fade-right">
                 <h3>E-Catalogue</h3>
                 <div class="icon-text">
                     <a href="images/MM-Brochure.pdf" target="_blank">
-                        <div class="ftr-up-icon"><img src="images/download-pdf.png" alt="Download Brochure" /></div>
+                        <div class="ftr-up-icon"><img src="/images/download-pdf.png" alt="Download Brochure" /></div>
                         <span>Download Now</span>
                     </a>
                 </div>
             </div>
 
-            <div class="ftr-up-col khakhra-assets" data-aos="zoom-in">
+            <!-- <div class="ftr-up-col khakhra-assets" data-aos="zoom-in">
                 <img src="images/assets/khakhra-chai.png" alt="Maruti Munchies" />
-            </div>
+            </div> -->
 
             <div class="ftr-up-col customer-care" data-aos="fade-left">
                 <h3>Customer Care</h3>
                 <div class="icon-text">
-                    <div class="ftr-up-icon"><img src="images/customer-care.png" alt="Download Brochure" /></div>
-                    <span><%=contact.mobile%></span>
+                    <div class="ftr-up-icon"><img src="/images/customer-care.png" alt="Download Brochure" /></div>
+                    <span><%=contact ? contact.mobile : ''%></span>
                 </div>
             </div>
         </div>

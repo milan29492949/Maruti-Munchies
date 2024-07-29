@@ -4,31 +4,7 @@
 <!-- /about.html -->
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="cache-control" content="no-cache" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="-1" />
-	<title>Maruti Munchies</title>
-
-	<link rel="icon" type="image/png" href="images/favicon.png" />
-	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
-
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-	<link href="inc/owl-carosuel/owl.carousel.css" type="text/css" rel="stylesheet" />
-	<link href="inc/owl-carosuel/owl.transitions.css" type="text/css" rel="stylesheet" />
-	<link href="inc/owl-carosuel/owl-animate.css" type="text/css" rel="stylesheet" />
-
-	<link href="inc/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" />
-
-	<link href="inc/aos/aos.css" type="text/css" rel="stylesheet" />
-
-	<link href="font/font.css" type="text/css" rel="stylesheet" />
-	<link href="css/style.css?" type="text/css" rel="stylesheet" />
-	<link href="css/media-query.css" type="text/css" rel="stylesheet" />
+	<%- include('layout/meta') -%>
 
 </head>
 
@@ -62,10 +38,10 @@
 			</div>
 
 			<section class="about-section inner-about-section">
-				<div class="pos-abs khakhra-wheat-abs" data-aos="fade-right"><img src="<%=about.left_image%>"
+				<!-- <div class="pos-abs khakhra-wheat-abs" data-aos="fade-right"><img src="<%=about.left_image%>"
 						alt="Maruti Munchise" /></div>
 				<div class="pos-abs abt-wheat-abs" data-aos="fade-left"><img src="<%=about.right_image%>"
-						alt="Maruti Munchise" /></div>
+						alt="Maruti Munchise" /></div> -->
 				<div class="container">
 					<div class="title text-center" data-aos="fade-up">
 						<h4 class="sub-title">know</h4>
@@ -80,14 +56,10 @@
 			</section>
 
 			<section class="facts-section inner-facts-section">
-				<div class="pos-abs red-green-chilli" data-aos="fade-right">
-					<img src="<%=fact.left_image%>" alt="Maruti Munchies" />
-				</div>
+				
 				<div class="container">
 
-					<div class="round-top-khakhra" data-aos="zoom-in">
-						<img src="<%=fact.main_image%>" alt="Maruti Munchies" />
-					</div>
+					
 
 					<div class="row facts-row">
 						<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2 fact-col fact-col-left">
@@ -211,13 +183,7 @@
 
 	</div>
 
-	<script type="text/javascript" src="js/jquery-3-6-0.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-	<script type="text/javascript" src="inc/owl-carosuel/owl.carousel.js"></script>
-	<script type="text/javascript" src="inc/fancybox/jquery.fancybox.js"></script>
-	<script type="text/javascript" src="inc/anm/anm.js"></script>
-	<script type="text/javascript" src="inc/aos/aos.js"></script>
-	<script type="text/javascript" src="js/design-common.js"></script>
+	<%- include('layout/scripts') -%>
 </body>
 
 <!-- /about.html  11:20:42 GMT -->
